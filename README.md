@@ -1,9 +1,10 @@
 # JSON_drawChart
 
-Draw chart with JSON data
+@ HTML, AJAX, JSON(XML)
 
-Using HTML Canvas, can draw chart based on JSON data
+Draw charts with JSON data on the canvas of HTML. 
 
+  
 
 HTML Canvas Reference 
 -----
