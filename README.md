@@ -69,3 +69,60 @@ shadowOffsetY	- Sets or returns the vertical distance of the shadow from the sha
           }
 				]
 			}
+
+Create JSON Data in xml format
+----
+
+	<data>
+		<month name="January">
+			<number>65</number>
+			<number>28</number>
+		</month>
+		<month name="February">
+			<number>20</number>
+			<number>92</number>
+		</month>
+		<month name="March">
+			<number>90</number>
+			<number>10</number>
+		</month>
+		<month name="April">
+			<number>81</number>
+			<number>19</number>
+		</month>
+	</data>
+
+
+Load XML data 
+------
+
+		$(document).ready(function() {
+			$.ajax({
+				type: "GET",
+				url: "chart.xml",
+				dataType: "xml",
+				success:loadChartData
+			});
+		});
+		
+
+Create method to call
+-------
+
+		function loadChartData(xml)
+		{
+			// load up values from XML
+			xx = 0;
+			$(xml).find("month").each(function() {
+				labels[xx] = $(this).attr("name");
+				
+				yy=0;
+				$(this).find('number').each(function() {
+					if (yy==0) {
+						data1[xx] = parseInt($(this).text());
+						yy++;}
+					else {
+						data2[xx] = parseInt($(this).text());}
+				});
+				xx++;
+			});
