@@ -53,22 +53,23 @@ shadowOffsetY	- Sets or returns the vertical distance of the shadow from the sha
 
     myChart = new Chart(ctx).Line(chartData);
     
-    		var chartData = {
-				labels : ["Jan", "Feb", "Mar", "Apr", "May"],
-				datasets: [
-					{
-            // color is optional, if not, default is grey
-            // R,G,B color, gradient(0 ~ 1) 
-            fillColor : "rgba(37, 94, 177, 0.5)",
-            strokeColor : "rgba(0, 0, 0, 1)",
-            pointColor : "rgba(255, 0, 0, 1)",
-            pointStrokeColor : "#fff",
+    var chartData = 
+	{
+		labels : ["Jan", "Feb", "Mar", "Apr", "May"],
+		datasets: [
+			  {
+			  // color is optional, if not, default is grey
+			  // R,G,B color, gradient(0 ~ 1) 
+			    fillColor : "rgba(37, 94, 177, 0.5)",
+			    strokeColor : "rgba(0, 0, 0, 1)",
+			    pointColor : "rgba(255, 0, 0, 1)",
+			    pointStrokeColor : "#fff",
 
-            // mandatory data information
-            data : [65, 59, 40, 81, 56]
-          }
-				]
+			 // mandatory data information
+			    data : [65, 59, 40, 81, 56]
 			}
+			]
+	}
 
 Create JSON Data in xml format
 ----
@@ -126,3 +127,14 @@ Create method to call
 				});
 				xx++;
 			});
+
+Graph Outout
+----
+
+<img src='graph_line2.JPG' width='400px	'>
+
+<img src='graph_line3.JPG' width='400px	'>
+
+<img src='graph_bar.JPG' width='400px	'>
+
+<img src='graph_bar3.JPG' width='400px	'>
