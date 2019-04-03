@@ -1,10 +1,42 @@
 # JSON_drawChart
+
 Draw chart with JSON data
 
-Canvas 
------
+Using HTML Canvas, can draw chart based on JSON data
 
-- Property	Description
+
+HTML Canvas Reference 
+-----
+ 
+The HTML5 <canvas> tag is used to draw graphics.  
+
+However, the <canvas> element has no drawing abilities, it is only a container for graphics
+	
+we must use a script to actually draw the graphics.
+
+
+Method of Canvas
+----
+
+- getContext() : returns an object that provides methods and properties for drawing on the canvas 
+  
+  getContext("2d") object, which can be used to draw text, lines, boxes, circles, and more  on the canvas.
+
+		The order to draw on the canvas
+		1. contain in script
+		
+		cvs = document.getElementById("canvas");
+		ctx = cvs.getContext('2d');
+		myChart = new Chart(ctx).Line(chartData);
+		
+		2. contain in body
+		
+		<canvas id="canvas" height="450" width="600"></canvas>
+		
+			
+Canvas Property
+-----
+ 
 
 fillStyle	- Sets or returns the color, gradient, or pattern used to fill the drawing
 
