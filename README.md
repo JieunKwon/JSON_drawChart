@@ -128,6 +128,7 @@ Create method to call
 				});
 				xx++;
 			});
+		}
 
 Graph Outout
 ----
