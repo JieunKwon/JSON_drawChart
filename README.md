@@ -24,7 +24,8 @@ Method of Canvas
   getContext("2d") object, which can be used to draw text, lines, boxes, circles, and more  on the canvas.
 
 		The order to draw on the canvas
-		1. contain in script
+		
+                1. contain in script
 		
 		cvs = document.getElementById("canvas");
 		ctx = cvs.getContext('2d');
@@ -72,7 +73,7 @@ shadowOffsetY	- Sets or returns the vertical distance of the shadow from the sha
 			]
 	}
 
-Create JSON Data in xml format
+Create JSON Data in xml format (chart.xml)
 ----
 
 	<data>
